@@ -1,3 +1,4 @@
+echo "#### mybash ####"
 export PATH=/opt/homebrew/bin:$PATH
 
 alias cfv="cd ~/.config/nvim; nvim ."
