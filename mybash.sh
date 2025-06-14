@@ -52,3 +52,8 @@ function mkdirc(){
 	mkdir "$1"
 	cd "$1"
 }
+
+avi2mp4(){
+ffmpeg -i $1 -c:v copy -c:a copy $1.mp4
+rm $1
+}
