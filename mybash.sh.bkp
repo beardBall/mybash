@@ -52,13 +52,16 @@ function mkdirc(){
 	mkdir "$1"
 	cd "$1"
 }
+<<<<<<< HEAD
+function bulkmv(){
+
+	for file in $1; do mv -v "$f" "${file/$2/$3}"; done;
+
+
+=======
 
 avi2mp4(){
 ffmpeg -i $1 -c:v copy -c:a copy $1.mp4
 rm $1
-}
-
-
-function bulkmv(){
-	for file in $1; do mv -v "$f" "${file/$2/$3}"; done;
+>>>>>>> ac966c9aaa8bafb7c08229ab43365f852427c84a
 }
