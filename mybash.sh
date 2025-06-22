@@ -62,3 +62,10 @@ rm $1
 function bulkmv(){
 	for file in $1; do mv -v "$f" "${file/$2/$3}"; done;
 }
+
+if [ -e .vimrc ]; then
+	cp .vimtc ../
+else
+	echo ".vimrc does not exist, skipping...."
+fi
+
