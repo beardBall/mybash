@@ -64,7 +64,7 @@ function bulkmv(){
 }
 
 if [ -e .vimrc ]; then
-	cp .vimtc ../
+	cp .vimrc ../
 else
 	echo ".vimrc does not exist, skipping...."
 fi
