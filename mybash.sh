@@ -1,6 +1,7 @@
 echo "#### mybash ####"
 export PATH=/opt/homebrew/bin:$PATH
 
+TOKEN=ghp_O6QYPr2JalSFOjfXkYSTodhR4W7gSh1gy07
 alias cfv="cd ~/.config/nvim; nvim ."
 alias lsa="ls-al"
 alias cls="clear"
@@ -63,8 +64,8 @@ function bulkmv(){
 	for file in $1; do mv -v "$f" "${file/$2/$3}"; done;
 }
 
-if [ -e .vimrc ]; then
-	cp .vimrc ../
+if [ -e ~/mybash/.vimrc ]; then
+	cp ~/mybash/.vimrc ~/
 else
 	echo ".vimrc does not exist, skipping...."
 fi
