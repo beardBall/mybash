@@ -1,5 +1,7 @@
 echo "#### mybash ####"
+alias please='sudo'
 export PATH=/opt/homebrew/bin:$PATH
+
 
 TOKEN=ghp_O6QYPr2JalSFOjfXkYSTodhR4W7gSh1gy07
 alias cfv="cd ~/.config/nvim; nvim ."
